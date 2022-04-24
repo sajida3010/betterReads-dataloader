@@ -1,0 +1,38 @@
+spring.application.name: betterreads-dataloader
+
+datadump.location:
+  author: /home/sajida/saz_js/dumps/authors_data
+  works: /home/sajida/saz_js/dumps/works_data
+
+spring:
+  main:
+    allow-circular-references: true
+  data:
+    cassandra:
+      keyspace-name: main
+      username: dLMXMhFSfJHAKlzdiXbfSuJs
+      password: ZXxCFzYYwz,ITM7g.qNP9oBJG_yM1mNRKl8ZU10j7K+4OzPZF,8UYMCb3krwO7QJY3-+yjY.HpNPnNMCfZ-5DIosnfM8RmPSOQh4KUIo2ewQvBtb9YKt,,dlr+wX+6--
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+astra.db:
+    id: 084981a8-a69a-482f-811e-2c7094e904d3-1
+    region: us-east1
+    keyspace: main
+    application.token: AstraCS:dLMXMhFSfJHAKlzdiXbfSuJs:affc400357f49fb06eac051ce50f5ec0a886af32abed207e8da015915a7f2be6
+
+
+
+
+
+
+
+
+      
